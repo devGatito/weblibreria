@@ -1,0 +1,17 @@
+{ "books": [
+    {
+        "id": 1,
+        "title": "El Amor en los Tiempos del Cólera",
+        "author": "Gabriel Garcia Marquez",
+        "price": 69000,
+        "cover": "https://via.placeholder.com/200x300?text=El+Amor+en+los+Tiempos+del+Cólera"
+    },
+    {
+        "id": 2,
+        "title": "Paraiso Travel",
+        "author": "Jorge Franco",
+        "price": 41400,
+        "cover": "https://via.placeholder.com/200x300?text=Paraiso+Travel"
+    }
+]
+}

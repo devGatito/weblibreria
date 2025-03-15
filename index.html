@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librería</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    
+    <!-- Navbar -->
+    <nav class="w-full bg-gray-800 text-white p-4 flex justify-between items-center">
+        <h1 class="text-xl font-bold">Tienda de Libros</h1>
+        <button id="cartBtn" class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg transition">
+            🛒 Ver Carrito (<span id="cartCount">0</span>)
+        </button>
+    </nav>
+
+    <div class="container mx-auto mt-8 px-4">
+        <input type="text" id="searchBar" placeholder="Buscar libros..." class="w-full p-2 border rounded-md shadow-sm">
+
+        <h2 class="text-2xl font-semibold text-gray-800 mt-6">Libros disponibles</h2>
+        <div id="booksContainer" class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        </div>
+    </div>
+
+    <div id="cartSidebar" class="fixed top-0 right-0 w-80 h-full bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out">
+        <div class="p-4 flex justify-between items-center border-b">
+            <h2 class="text-xl font-bold">Carrito</h2>
+            <button id="closeCartBtn" class="text-gray-500 hover:text-gray-700 text-xl">&times;</button>
+        </div>
+        <div id="cartItems" class="p-4 space-y-4 overflow-y-auto h-[calc(100vh-120px)]">
+            <p class="text-gray-500">Tu carrito está vacío.</p>
+        </div>
+        <div class="p-4 border-t">
+            <button id="checkoutBtn" class="w-full bg-green-500 text-white py-2 rounded-lg hover:bg-green-600 transition">
+                Finalizar Compra
+            </button>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
